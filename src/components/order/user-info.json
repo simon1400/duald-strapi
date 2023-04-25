@@ -1,8 +1,7 @@
 {
   "collectionName": "components_order_user_infos",
   "info": {
-    "displayName": "userInfo",
-    "description": ""
+    "displayName": "userInfo"
   },
   "options": {},
   "attributes": {
@@ -35,9 +34,6 @@
     "state": {
       "type": "string",
       "required": true
-    },
-    "vat": {
-      "type": "string"
     }
   }
 }
