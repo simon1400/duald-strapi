@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_order_basket_items",
+  "info": {
+    "displayName": "basketItems",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "float",
+      "required": true
+    },
+    "count": {
+      "type": "integer",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "countInPack": {
+      "type": "decimal"
+    }
+  }
+}

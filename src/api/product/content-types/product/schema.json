@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Продукти",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "unit": {
+      "type": "enumeration",
+      "enum": [
+        "кг.",
+        "л.",
+        "шт."
+      ],
+      "default": "кг.",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "relateds": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "toRelateds"
+    },
+    "toRelateds": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "relateds"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": false
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "products"
+    },
+    "brands": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::brand.brand",
+      "inversedBy": "products"
+    },
+    "rank": {
+      "type": "biginteger",
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "variants": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product.variants",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
