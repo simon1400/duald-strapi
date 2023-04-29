@@ -26,11 +26,11 @@
     },
     "city": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "address": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "state": {
       "type": "string",
