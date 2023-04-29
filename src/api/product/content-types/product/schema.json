@@ -96,7 +96,7 @@
           "localized": true
         }
       },
-      "type": "biginteger"
+      "type": "float"
     }
   }
 }
