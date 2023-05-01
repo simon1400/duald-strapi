@@ -43,6 +43,9 @@
     "idOrder": {
       "type": "biginteger",
       "required": true
+    },
+    "sumVat": {
+      "type": "float"
     }
   }
 }

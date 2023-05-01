@@ -24,6 +24,9 @@
     },
     "countInPack": {
       "type": "decimal"
+    },
+    "priceVat": {
+      "type": "float"
     }
   }
 }
