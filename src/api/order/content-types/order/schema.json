@@ -46,6 +46,10 @@
     },
     "sumVat": {
       "type": "float"
+    },
+    "delivered": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
